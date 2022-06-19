@@ -1,0 +1,59 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+body{
+    background-color: $color-body;
+}
+
+.grid-container{
+    margin: 20vh 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.main-title{
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 20vw;
+        margin: 1rem;
+        height: 4vh;
+        border-radius: 20%;
+        color: $color-body;
+    }
+    .boat-buttons{
+        display: none;
+    }   
+}
+.your-grid, .computer-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px);
+    grid-gap: 5px;
+}
+
+.your-window, .computer-window{
+    background: black;
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.cells{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: red;
+}
+
